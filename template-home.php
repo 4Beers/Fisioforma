@@ -11,7 +11,7 @@ get_header(); ?>
 
         <!-- Indicators -->
         <ol class="carousel-indicators">
-          
+
           <?php
             $banner01 = rwmb_meta( 'fisiohomebanner-img01', 'type=image' );
             $banner02 = rwmb_meta( 'fisiohomebanner-img02', 'type=image' );
@@ -26,7 +26,7 @@ get_header(); ?>
             $link05 = rwmb_meta( 'fisiohomebanner-link05' );
             $link06 = rwmb_meta( 'fisiohomebanner-link06' );
           ?>
-          
+
           <?php if( ($banner01)) { ?>
               <li data-target="#header-c" data-slide-to="0" class="active"></li>
           <?php } ?>
@@ -137,27 +137,27 @@ get_header(); ?>
 
    <article class="indexcall container clearfix">
       <div class="list-article">
-        
+
         <div class="single-article treatment">
           <h1><?php echo rwmb_meta( 'fisiohome01block-titulo01' ); ?></h1>
           <a href="<?php echo rwmb_meta( 'fisiohome01block-link01' ); ?>">
-            <?php 
+            <?php
             $images = rwmb_meta( 'fisiohome01block-foto01', 'type=plupload_image' );
             foreach ( $images as $image )
             {
                 echo "<img src='{$image['full_url']}'>";
             }
-            ?>          
+            ?>
           </a>
           <h2><?php echo rwmb_meta( 'fisiohome01block-subtitulo01' ); ?></h2>
           <p><?php echo rwmb_meta( 'fisiohome01block-texto01' ); ?></p>
           <a class="article-btn" href="<?php echo rwmb_meta( 'fisiohome01block-link01' ); ?>"><span>></span> Saiba mais</a>
         </div>
-        
+
         <div class="single-article news">
           <h1><?php echo rwmb_meta( 'fisiohome01block-titulo02' ); ?></h1>
           <a href="<?php echo rwmb_meta( 'fisiohome01block-link02' ); ?>">
-            <?php 
+            <?php
             $images = rwmb_meta( 'fisiohome01block-foto02', 'type=plupload_image' );
             foreach ( $images as $image )
             {
@@ -169,11 +169,11 @@ get_header(); ?>
           <p><?php echo rwmb_meta( 'fisiohome01block-texto02' ); ?></p>
           <a class="article-btn" href="<?php echo rwmb_meta( 'fisiohome01block-link02' ); ?>"><span>></span> Saiba mais</a>
         </div>
-        
+
         <div class="single-article recipe">
           <h1><?php echo rwmb_meta( 'fisiohome01block-titulo03' ); ?></h1>
           <a href="<?php echo rwmb_meta( 'fisiohome01block-link03' ); ?>">
-            <?php 
+            <?php
             $images = rwmb_meta( 'fisiohome01block-foto03', 'type=plupload_image' );
             foreach ( $images as $image )
             {
@@ -185,11 +185,11 @@ get_header(); ?>
           <p><?php echo rwmb_meta( 'fisiohome01block-texto03' ); ?></p>
           <a class="article-btn" href="<?php echo rwmb_meta( 'fisiohome01block-link03' ); ?>"><span>></span> Saiba mais</a>
         </div>
-        
+
       </div>
     </article>
 
-    <article class="indexcall video clearfix">
+    <article class="video clearfix">
       <div class="container">
         <div class="latest-video">
           <?php
@@ -202,13 +202,15 @@ get_header(); ?>
             echo $embed_code;
           ?>
         </div>
-        <!--<div class="another-videos">
-          <img class="videos" src="images/programa1.png">
-          <img class="videos" src="images/program2.png">
-          <img class="videos" src="images/programa1.png">
-        </div>-->
       </div>
     </article>
+
+    <div class="programa-info">
+      <div class="container">
+        <?php $info = rwmb_meta( 'fisiohome02block-info' );
+        echo "{$info}";?>
+      </div>
+    </div>
 
     <div class="container bottom-bar clearfix">
       <div class="circle">
@@ -217,7 +219,7 @@ get_header(); ?>
             <h1><?php echo rwmb_meta( 'fisiohome02block-titulo01' ); ?></h1>
             <hr class="purple">
           </div>
-          <?php 
+          <?php
             $images = rwmb_meta( 'fisiohome02block-foto01', 'type=plupload_image' );
             foreach ( $images as $image )
             {
@@ -233,7 +235,7 @@ get_header(); ?>
             <h1><?php echo rwmb_meta( 'fisiohome02block-titulo02' ); ?></h1>
             <hr class="orange">
           </div>
-          <?php 
+          <?php
             $images = rwmb_meta( 'fisiohome02block-foto02', 'type=plupload_image' );
             foreach ( $images as $image )
             {
@@ -242,14 +244,14 @@ get_header(); ?>
           ?>
         </a>
       </div>
-      
+
       <div class="circle">
         <a href="<?php echo rwmb_meta( 'fisiohome02block-link03' ); ?>">
           <div class="intern">
             <h1><?php echo rwmb_meta( 'fisiohome02block-titulo03' ); ?></h1>
             <hr class="green">
           </div>
-          <?php 
+          <?php
             $images = rwmb_meta( 'fisiohome02block-foto03', 'type=plupload_image' );
             foreach ( $images as $image )
             {

@@ -382,11 +382,22 @@ width:33%;
     margin-left: 10% !important;
     position: relative;
     top: 40px;
-    left: inherit !important; 
+    left: inherit !important;
     color: #002143;
     margin-top: 0;
     text-transform: uppercase;
     font-family: Aero;
     font-size: 30px;
     margin-bottom: 90px;
+}
+
+.programa-info{
+	background: #1C1E4B;
+	text-align: center;
+	margin: 0;
+	padding: 10px;
+	color: white;
+}
+.programa-info hr{
+	border-top: 1px solid rgba(238, 238, 238, 0.25);
 }

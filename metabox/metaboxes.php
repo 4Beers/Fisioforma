@@ -222,6 +222,22 @@ $meta_boxes[] = array(
 );
 
 $meta_boxes[] = array(
+    'title'    => 'Segundo Campo - Programa Fisioforma - Informações',
+	  'pages' => array( 'page' ),
+    'include'  => array(
+      'template' => array( 'template-home.php' ),
+    ),
+    'id'       => 'pagina-home-segundo-campo-info',
+    'fields' => array(
+        array(
+            'name' => 'Texto dos Horários',
+            'id'   => "{$prefix}home02block-info",
+            'type' => 'textarea',
+        ),
+    )
+);
+
+$meta_boxes[] = array(
     'title'    => 'Terceiro Campo',
 	  'pages' => array( 'page' ),
     'include'  => array(
@@ -322,7 +338,7 @@ $meta_boxes[] = array(
 			'std'  => '',
             'max_file_uploads' => 50,
 		),
-    
+
 	),
 );
 
